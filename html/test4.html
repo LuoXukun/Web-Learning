@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web page lifecycle example</title>
+    <style>
+        body {border-style: solid; border-width:2px; border-color: #33c}
+        #first {color:green;}
+        #second {color: red;}
+    </style>
+</head>
+<body>
+    <ul id="first"></ul>
+    <script>
+        const addMessage = function(element, message) {
+            const messageElement = document.createElement("li");
+            messageElement.textContent = message;
+            element.appendChild(messageElement);
+        }
+        const first = document.getElementById("first");
+        addMessage(first, "Page loading ...");
+    </script>
+
+    <ul id="second"></ul>
+    <script>
+        document.body.addEventListener("mouseenter",function(){
+            const second = document.getElementById("second");
+            addMessage(second, "Event : mouse-enter");
+        });
+
+        document.body.addEventListener("mouseleave",function(){
+            const second = document.getElementById("second");
+            addMessage(second, "Event : mouse-leave");
+        });
+
+        document.body.addEventListener("click",function(){
+            const second = document.getElementById("second");
+            addMessage(second, "Event : click");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.small-body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 500px;
+}
+
+.clearf:before,
+.clearf::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.back {
+    background: #fff;
+}

@@ -1,0 +1,38 @@
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+button:hover, a:hover {
+    background: #888;
+}
+
+button:active {
+    background: #333;
+    color: #fff;
+}
+
+input:focus {
+    background: #aaa;
+}
+
+p:first-letter {
+    font-size: 50px;
+}
+
+.help:after {
+    content: "[?]";
+    color: blue;
+}
+
+.help:before {
+    content: "*";
+    color: red;
+}
+
+div p:first-child {
+    color: blue;
+}

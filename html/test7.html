@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/test7.css">
+</head>
+<body>
+    <!--导航栏-->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">旭辉网</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-default">搜一下</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">我的</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="small-body">
+        <!--表单-->
+        <div class="well">
+            <div class="container container-small">
+                <h1>登陆</h1>
+                <form>
+                    <div class="alert alert-success">登陆成功~ 正在跳转...</div>
+                    <div class="form-group">
+                        <label>用户名</label>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input class="form-control" type="password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit">登陆</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--栅格系统-->
+        <div class="well clearf">
+            <div class="col-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis odit sit voluptates, est, maxime, delectus quia perferendis dolores eum placeat facilis dolorum corrupti laudantium ratione? Doloremque quas earum libero labore?</div>
+            <div class="col-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis odit sit voluptates, est, maxime, delectus quia perferendis dolores eum placeat facilis dolorum corrupti laudantium ratione? Doloremque quas earum libero labore?</div>
+            <div class="col-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis odit sit voluptates, est, maxime, delectus quia perferendis dolores eum placeat facilis dolorum corrupti laudantium ratione? Doloremque quas earum libero labore?</div>
+            <div class="col-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis odit sit voluptates, est, maxime, delectus quia perferendis dolores eum placeat facilis dolorum corrupti laudantium ratione? Doloremque quas earum libero labore?</div>
+        </div>
+
+        <!--表单-->
+        <div class="well">
+            <form class="container container-small">
+                <h1>注册</h1>
+                <div class="form-inline form-group">
+                    <div class="form-group">
+                        <label class="control-label">姓</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>名</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>充值金额</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Other</label>
+                    <select class="form-control">
+                        <option value="1">item1</option>
+                        <option value="1">item2</option>
+                        <option value="1">item3</option>
+                        <option value="1">item4</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="xxxx">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="xxxx">
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="xxxx">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--按钮-->
+        <div class="well">
+            <p>
+                <button class="btn btn-default">戳我</button>
+                <button class="btn btn-primary">提交</button>
+                <button class="btn btn-danger">危险操作</button>
+                <button class="btn btn-warning">警告</button>
+                <button class="btn btn-info">信息</button>
+                <a href="http://baidu.com" class="btn btn-danger">百度一下</a>
+                <input type="submit" class="btn btn-primary" value="submit">
+            </p>
+            <p>
+                <button class="btn btn-primary btn-lg">大</button>
+                <button class="btn btn-primary">正常</button>
+                <button class="btn btn-primary btn-sm">小</button>
+                <button class="btn btn-primary btn-xs">超小</button>
+            </p>
+            <p>
+                <button class="btn btn-primary btn-block">戳我</button>
+            </p>
+            <p>
+                <button disabled="disabled" class="btn btn-default">item1</button>
+                <button class="btn btn-default active">item2</button>
+                <button class="btn btn-default">item3</button>
+            </p>
+        </div>
+
+        <!--按钮组-->
+        <div class="well">
+            <div class="tool-bar">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-default">item1</button>
+                    <button class="btn btn-default">item2</button>
+                    <button class="btn btn-default">item3</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-default">item1</button>
+                    <button class="btn btn-default">item2</button>
+                    <button class="btn btn-default">item3</button>
+                </div>
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-default">item1</button>
+                    <button class="btn btn-default">item2</button>
+                    <button class="btn btn-default">item3</button>
+                </div>
+                <div class="btn-group btn-group-xs">
+                    <button class="btn btn-default">item1</button>
+                    <button class="btn btn-default">item2</button>
+                    <button class="btn btn-default">item3</button>
+                </div>
+            </div>
+            <p>
+                <div class="btn-group-vertical">
+                    <button class="btn btn-default">item1</button>
+                    <button class="btn btn-default">item2</button>
+                    <button class="btn btn-default">item3</button>
+                </div>
+            </p>
+        </div>
+
+        <!--导航-->
+        <div class="well back">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <div class="ul-content">
+                <h1>登录</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quas, rerum voluptate asperiores cum laborum facilis pariatur consequuntur cupiditate maxime maiores iure eligendi, qui voluptatum repellat, aliquid tenetur quos ad?</p>
+            </div>
+            <br>
+            <br>
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <div class="ul-content">
+                <h1>登录</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quas, rerum voluptate asperiores cum laborum facilis pariatur consequuntur cupiditate maxime maiores iure eligendi, qui voluptatum repellat, aliquid tenetur quos ad?</p>
+            </div>
+            <br>
+            <br>
+            <div class="row clearf">
+                <div class="col-xs-4">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">忘记密码</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-8">
+                    <div class="ul-content">
+                        <h1>登录</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quas, rerum voluptate asperiores cum laborum facilis pariatur consequuntur cupiditate maxime maiores iure eligendi, qui voluptatum repellat, aliquid tenetur quos ad?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--面板-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">用户统计</div>
+                <div class="small text-muted">每日用户情况统计</div>
+            </div>
+            <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid molestiae fugit. Placeat, totam nisi sunt cumque corporis id tempore soluta quod nobis ullam aspernatur eum porro quasi consequuntur! Aliquid?</div>
+            <div class="panel-footer small text-muted">数据更新于5s前</div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="panel-title">用户统计</div>
+                <div class="small text-muted">每日用户情况统计</div>
+            </div>
+            <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid molestiae fugit. Placeat, totam nisi sunt cumque corporis id tempore soluta quod nobis ullam aspernatur eum porro quasi consequuntur! Aliquid?</div>
+            <div class="panel-footer small text-muted">数据更新于5s前</div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <div class="panel-title">用户统计</div>
+                <div class="small text-muted">每日用户情况统计</div>
+            </div>
+            <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid molestiae fugit. Placeat, totam nisi sunt cumque corporis id tempore soluta quod nobis ullam aspernatur eum porro quasi consequuntur! Aliquid?</div>
+            <div class="panel-footer small text-muted">数据更新于5s前</div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">用户统计</div>
+                <div class="small text-muted">每日用户情况统计</div>
+            </div>
+            <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid molestiae fugit. Placeat, totam nisi sunt cumque corporis id tempore soluta quod nobis ullam aspernatur eum porro quasi consequuntur! Aliquid?</div>
+            <div class="panel-footer small text-muted">数据更新于5s前</div>
+        </div>
+
+        <div class="well back">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>注册时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>注册时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>注册时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>注册时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                    <tr>
+                        <td>罗旭辉</td>
+                        <td>www.luo@罗旭辉是混蛋.com</td>
+                        <td>2222-22-22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--其他-->
+        <!--页码-->
+        <div class="well">
+            <ul class="pagination">
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">下一页</a></li>
+            </ul>
+
+            <ul class="pager">
+                <li><a href="#">上一页</a></li>
+                <li class="disabled"><a href="#">下一页</a></li>
+            </ul>
+        </div>
+
+        <!--路径导航-->
+        <div class="well">
+            <div class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">文章列表</a></li>
+                <li class="active">呵呵哒 <span class="badge">10000</span></li>
+            </div>
+            <h1>Yo, world.</h1>
+            <p>
+                <div class="label label-success">旭辉</div>
+                <div class="label label-info">旭辉</div>
+                <div class="label label-warning">旭辉</div>
+                <div class="label label-danger">旭辉</div>
+                <div class="label label-default">旭辉</div>
+            </p>
+            <div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo aliquid repellendus facilis ut inventore eveniet magni ratione accusamus ad iusto natus pariatur cupiditate, esse modi minus rem ducimus voluptatem.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo aliquid repellendus facilis ut inventore eveniet magni ratione accusamus ad iusto natus pariatur cupiditate, esse modi minus rem ducimus voluptatem.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo aliquid repellendus facilis ut inventore eveniet magni ratione accusamus ad iusto natus pariatur cupiditate, esse modi minus rem ducimus voluptatem.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo aliquid repellendus facilis ut inventore eveniet magni ratione accusamus ad iusto natus pariatur cupiditate, esse modi minus rem ducimus voluptatem.</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo aliquid repellendus facilis ut inventore eveniet magni ratione accusamus ad iusto natus pariatur cupiditate, esse modi minus rem ducimus voluptatem.</div>
+            </div>
+            <button class="btn btn-success">赞 <span class="badge">100</span></button>
+            <br>
+            <br>
+            <div class="list-group">
+                <a href="#" class="list-group-item">item1</a>
+                <a href="#" class="list-group-item">item2</a>
+                <a href="#" class="list-group-item">item3</a>
+                <a href="#" class="list-group-item">item4</a>
+            </div>
+            <div>
+                <ul class="pagination">
+                    <li><a href="#">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="well">
+            <div>
+                <div class="alert alert-danger">着火了！</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

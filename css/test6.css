@@ -1,0 +1,8 @@
+#gallery {
+    list-style: none;
+}
+
+#gallery li {
+    display: inline;
+    padding: 10px;
+}

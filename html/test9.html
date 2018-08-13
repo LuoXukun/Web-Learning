@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #card, #card1 {
+        background: #eee;
+        padding: 20px;
+        margin: 10px 0;
+    }
+    #card h1 {
+        margin: 0;
+    }
+    #card.active,
+    #card1.active {
+        background: #555;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <button id="card-trigger">显示/隐藏公告</button>
+    <div id="card">
+        <h1>公告栏</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae eveniet ad fuga similique laboriosam corporis officia sit illum magnam at minima, ab a distinctio tempore dolorem iste nesciunt quasi?
+    </div>
+
+    <form id="login" action="./result.html">
+        用户名： <input type="text">
+        密码：   <input type="password">
+    </form>
+
+    <button id="login-trigger">登录提交</button>
+
+    <button id="card-trigger1">显示/隐藏公告</button>
+    <div id="card1" style="display: none;">
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="../js/test9.js"></script>
+</body>
+</html>

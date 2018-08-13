@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>我的第一个网页</title>
+    <link rel="stylesheet" href="../css/test1.css">
+  </head>
+  <body>
+    <h3>《大话西游》</h3>
+    <p>
+      《大话西游》是一部香港无厘头搞笑片，成就了大话的经典传奇。
+      《大话西游》是一部香港无厘头搞笑片，成就了大话的经典传奇。
+    </p>
+
+    <div class="block">
+      lala
+    </div>abc
+
+    <div class="inline">
+      行内元素
+      《大话西游》是一部香港无厘头搞笑片，成就了大话的经典传奇。
+    </div>abc
+
+    <div class="inline-block">
+      行内块元素
+      《大话西游》是一部香港无厘头搞笑片，成就了大话的经典传奇。
+    </div>
+
+    <h3>下面是一张图片</h3>
+    <img src="../src/test1.jpg" alt="不给你看..." width="1000dp" height="600dp">
+
+    <h3>下面是一个超链接</h3>
+    <a href="http://www.baidu.com">百度一下，你就知道</a>
+    <a href="../src/test1.jpg">亚瑟王saber</a>
+
+    <h3>下面是一个有序列</h3>
+    <ol>
+      <li><a href="http://www.baidu.com">百度一下，你就知道</a></li>
+      <li><a href="../src/test1.jpg">亚瑟王saber</a></li>
+    </ol>
+
+    <h3>下面是一个无序列</h3>
+    <ul>
+      <li><a href="http://www.baidu.com">百度一下，你就知道</a></li>
+      <li><a href="../src/test1.jpg">亚瑟王saber</a></li>
+    </ul>
+
+    <h3>下面是一个表格</h3>
+    <table>
+      <tr>
+        <th></th>
+        <th>第一列</th>
+        <th>第二列</th>
+      </tr>
+      <tr>
+        <th>第一行</th>
+        <td>(1,1)</td>
+        <td rowspan="2">(1,2)</td>
+      </tr>
+      <tr>
+        <th>第二行</th>
+        <td>(2,1)</td>
+      </tr>
+    </table>
+
+    <h3>下面是一个表单</h3>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>输入你的个人信息</legend>
+        <div>
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">邮箱</label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+          <label for="msg">信息</label>
+          <textarea id="msg" name="user_message" rows="8" cols="80"></textarea>
+        </div>
+        <div>
+          <button type="submit">确定</button>
+          <button type="reset">重置</button>
+          <button type="button">没事</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>选择你的兴趣</legend>
+        <div>
+          <input type="checkbox" id="play_ball" name="hobby" value="play_ball">
+          <label for="play_ball">打球</label>
+        </div>
+        <div>
+          <input type="checkbox" id="music" name="hobby" value="music">
+          <label for="music">听音乐</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
