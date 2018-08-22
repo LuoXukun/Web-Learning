@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="./test2.css">
+</head>
+<body>
+    <div class="container container-small">
+        <h1>注册
+            <small>已经注册？<a href="./login.html">登录</a></small>
+        </h1>
+        <form id="my-form">
+            <div class="form-group">
+                <label>学生编号</label>
+                <input name="student-code" id="student-code" type="text" class="form-control" value="12345678">
+                <div class="info">(8位数字)</div>
+            </div>
+            <div class="form-group">
+                <label>学生名字</label>
+                <input name="student-name" id="student-name" type="text" class="form-control" value="刘训">
+                <div class="info">(中文)</div>
+            </div>
+            <div class="form-group">
+                <label>邮箱地址</label>
+                <input name="student-post" id="student-post" type="email" class="form-control" value="1056125478@qq.com">
+                <div class="info"></div>
+            </div>
+            <div class="form-group">
+                <label>电话号码</label>
+                <input name="student-phone" id="student-phone" type="text" class="form-control" value="15574074751">
+                <div class="info"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-block"></button>
+            </div>
+        </form>
+    </div>
+    <script src="./test2.js"></script>
+</body>
+</html>
