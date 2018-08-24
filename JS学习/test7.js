@@ -1,5 +1,6 @@
 var p1 = document.getElementById('p1');
 var clock = document.getElementById('clock');
+var btn = document.getElementById('btn');
 
 function person(firstName, lastName, age, eyeColor) {
     this.firstName = firstName;
@@ -21,6 +22,7 @@ p1.innerText = txt;
 
 
 // 显示一个时钟
+/*
 function startTime() {
     var today = new Date();
     var hour = today.getHours()
@@ -33,6 +35,11 @@ function startTime() {
 
     clock.innerText = hour + ':' + minute + ':' + second;
 }
+*/
+function startTime() {
+    var today = new Date();
+    clock.innerText = today.toLocaleTimeString();
+}
 
 function checkTime(x) {
     if(x < 10)
@@ -40,4 +47,10 @@ function checkTime(x) {
     return x;
 }
 
-document.body.onload = setInterval(function() {startTime();}, 500);
+var myEvent = setInterval(function() {startTime();}, 500);
+
+document.body.onload = myEvent;
+
+btn.addEventListener('click', function() {
+    clearInterval(myEvent);
+});
