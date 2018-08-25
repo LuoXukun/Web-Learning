@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>幻灯片播放</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./img/test1.jpg" alt="无法加载" style="width:1000px; height: 600px;">
+            <div class="number-text">1 / 5</div>
+            <div class="text">文本 1</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/test2.jpg" alt="无法加载" style="width:1000px; height: 600px;">
+            <div class="number-text">2 / 5</div>
+            <div class="text">文本 2</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/test3.jpg" alt="无法加载" style="width:1000px; height: 600px;">
+            <div class="number-text">3 / 5</div>
+            <div class="text">文本 3</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/test4.jpg" alt="无法加载" style="width:1000px; height: 600px;">
+            <div class="number-text">4 / 5</div>
+            <div class="text">文本 4</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./img/test5.jpg" alt="无法加载" style="width:1000px; height: 600px;">
+            <div class="number-text">5 / 5</div>
+            <div class="text">文本 5</div>
+        </div>
+
+        <a id="prev"> < </a>
+        <a id="next"> > </a>
+    </div>
+
+    <div class="slider-btn" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
