@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+        .top-menu ul {
+            margin: 0;
+            padding: 0;
+            background-color: #777;
+        }
+        .top-menu ul li {
+            float: left;
+        }
+        .top-menu ul li a {
+            color: white;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        .top-menu ul li a.active {
+            background-color:fuchsia;
+        }
+        .top-menu ul li a:hover {
+            background-color: #222;
+        }
+        .col-3 {
+            float:left;
+            max-width: 30%;
+        }
+        .col-7 {
+            float: left;
+            max-width: 70%;
+        }
+        .container {
+            margin: 15px 0;
+        }
+        .side-menu {
+            background-color: white;
+            display: inline-block;
+            margin: 15px 15px;
+        }
+        .side-menu ul li {
+            text-align: center;
+        }
+        .side-menu ul li a {
+            background-color: #eee;
+            display: block;
+            font-size:20px;
+            line-height: 40px;
+            color: #999;
+            margin-bottom: 5px;
+            padding: 8px;
+        }
+        .side-menu ul li a:hover {
+            background-color: aqua;
+        }
+        .side-menu ul li a.active {
+            background-color: blue;
+        }
+        .head {
+            background-color: blue;
+            color: white;
+            padding: 30px;
+            margin: 28px;
+            text-align: center;
+        }
+        .content {
+            padding: 5px 30px;
+        }
+        .footer {
+            background: #777;
+            padding: 10px;
+            margin: 0 30px;
+            text-align: center;
+            color: #eee;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+        <ul class="clearfix">
+            <li><a href="#" class="active">主页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="clearfix container">
+        <div class="side-menu col-3">
+            <ul>
+                <li><a href="#">The Flight</a></li>
+                <li><a href="#" class="active">The City</a></li>
+                <li><a href="#">The Island</a></li>
+                <li><a href="#">The Food</a></li>
+                <li><a href="#">The People</a></li>
+                <li><a href="#">The Histroy</a></li>
+                <li><a href="#">The Oceans</a></li>
+            </ul>
+        </div>
+        <div class="side-container col-7">
+            <div class="head"><h1>The City</h1></div>
+            <div class="content">
+                <h1>Lorem</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Fuga asperiores alias a odit vitae maiores cupiditate ducimus nemo assumenda. 
+                    Dicta optio accusamus quaerat voluptatibus animi laboriosam laborum! Quos, ad dolor.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>底部文件</p>
+    </div>
+</body>
+</html>
