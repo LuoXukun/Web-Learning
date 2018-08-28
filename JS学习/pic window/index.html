@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 图片略缩图 -->
+    <img src="./test.jpg" alt="my picture" id="myPic" width="300px" height="200px">
+
+    <!-- 弹窗 -->
+    <div id="myWin" class="win">
+        <!-- 关闭按钮 -->
+        <div class="close" onclick="document.getElementById('myWin').style.display = 'none'">&times;</div>
+        <!-- 弹窗内容 -->
+        <img class="content" id="my-img">
+        <!-- 文本描述 -->
+        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam incidunt soluta praesentium, repellendus nesciunt enim recusandae? Porro quo, veniam dolorum repellendus veritatis, quis pariatur esse, amet earum repudiandae ab.</div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
