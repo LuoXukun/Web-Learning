@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 按钮 */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+/* 容器--需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+}
+
+/* 链接 */
+a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 500ms;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+/* 鼠标在按钮上显示下拉内容 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .btn{
+    background-color: #3e8e41;
+}
