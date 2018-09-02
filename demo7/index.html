@@ -4,63 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light Box</title>
     <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
 </head>
 <body>
-    <h1>Light Box</h1>
+    <h2>LightBox</h2>
+
+    <!-- 图片预览 -->
     <div class="container clearfix">
-        <div class="col">
-            <img src="./src/test1.jpg" alt="Test1">
+        <div class="column">
+            <img src="./src/test1.jpg" alt="test1" class="cursor hover-shadow">
         </div>
-        <div class="col">
-            <img src="./src/test2.jpg" alt="Test2">
+        <div class="column">
+            <img src="./src/test2.jpg" alt="test2" class="cursor hover-shadow">
         </div>
-        <div class="col">
-            <img src="./src/test3.jpg" alt="Test3">
+        <div class="column">
+            <img src="./src/test3.jpg" alt="test3" class="cursor hover-shadow">
         </div>
-        <div class="col">
-            <img src="./src/test4.jpg" alt="Test4">
+        <div class="column">
+            <img src="./src/test4.jpg" alt="test4" class="cursor hover-shadow">
         </div>
     </div>
-    <div class="win" id="myWin">
-        <div id="close" onclick="document.getElementById('myWin').style.display = 'none'">&times;</div>
-        <div class="content">
-            <div class="mySliders">
-                <img src="./src/test1.jpg" style="width: 100%;" alt="Test1">
-                <div class="numberText">1 / 4</div>
-            </div>
-            <div class="mySliders active">
-                <img src="./src/test2.jpg" style="width: 100%;" alt="Test2">
-                <div class="numberText">2 / 4</div>
-            </div>
-            <div class="mySliders">
-                <img src="./src/test3.jpg" style="width: 100%;" alt="Test3">
-                <div class="numberText">3 / 4</div>
-            </div>
-            <div class="mySliders">
-                <img src="./src/test4.jpg" style="width: 100%;" alt="Test4">
-                <div class="numberText">4 / 4</div>
-            </div>
-            
-            <a id="prev"> < </a>
-            <a id="next"> > </a>
 
-            <div class="description">
-                <p id="des"></p>
+    <!-- 窗口 -->
+    <div class="modal" id="myModal">
+        <div class="close cursor" id="close">&times;</div>
+
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="./src/test1.jpg" alt="test1">
+                <div class="number-text">1 / 4</div>
+            </div>
+            <div class="mySlides">
+                <img src="./src/test2.jpg" alt="test2">
+                <div class="number-text">2 / 4</div>
+            </div>
+            <div class="mySlides">
+                <img src="./src/test3.jpg" alt="test3">
+                <div class="number-text">3 / 4</div>
+            </div>
+            <div class="mySlides">
+                <img src="./src/test4.jpg" alt="test4">
+                <div class="number-text">4 / 4</div>
             </div>
 
-            <div class="col">
-                <img src="./src/test1.jpg" style="width: 100%;" alt="Test1">
+            <div class="prev cursor" id="prev"> < </div>
+            <div class="next cursor" id="next"> > </div>
+
+            <div class="caption-container">
+                <p id="caption">test1</p>
             </div>
-            <div class="col">
-                <img src="./src/test2.jpg" style="width: 100%;" alt="Test2">
+
+            <div class="column">
+                <img src="./src/test1.jpg" alt="test1" class="cursor demo">
             </div>
-            <div class="col">
-                <img src="./src/test3.jpg" style="width: 100%;" alt="Test3">
+            <div class="column">
+                <img src="./src/test2.jpg" alt="test2" class="cursor demo">
             </div>
-            <div class="col">
-                <img src="./src/test4.jpg" style="width: 100%;" alt="Test4">
+            <div class="column">
+                <img src="./src/test3.jpg" alt="test3" class="cursor demo">
+            </div>
+            <div class="column">
+                <img src="./src/test4.jpg" alt="test4" class="cursor demo">
             </div>
         </div>
     </div>
