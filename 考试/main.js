@@ -21,8 +21,16 @@ const WEIGHT = {
 }
 
 const getRules = path => {
-   // your code here 
-   
+    // your code here 
+    var obj = {};
+    if(path.indexOf('#') > -1 && path.indexOf('.') > -1) {
+        obj = Object.assign(rules["#page .content a"], obj);
+    }
+    if(path.indexOf('#') > -1) {
+        obj = Object.assign(rules["#page a"], obj);
+    }
+    obj = Object.assign(rules["a"], obj);
+    return obj;
 }
 
 console.log(getRules('a'));

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearf::before,
+.clearf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+    margin-bottom: 10px;
+    position: relative;
+    background: #f5f5f5;
+}
+
+.logo {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    float: left;
+}
+
+.username {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.content {
+    margin-right: 220px;
+    height: 400px;
+    background: #f0f;
+}
+
+.footer {
+    margin-top: 10px;
+    background: #666;
+    height: 30px;
+}
+
+.aside {
+    width: 200px;
+    float: right;
+    height: 400px;
+    background: #ff0;
+}
