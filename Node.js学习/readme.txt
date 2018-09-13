@@ -25,4 +25,12 @@ Buffer类: 为Node.js带来了一种存储原始数据的方法，可以让Node.
 7. Node.js常用工具util
 
 8. Node.js文件系统模块（fs）
+
+9. Express: 一个简洁而灵活的node.js Web应用框架，可以快速地搭建一个完整功能的网站
+   Express框架核心特性：
+   1. 可以设置中间件来响应HTTP请求
+   2. 定义了路由表用于执行不同的HTTP请求动作
+   3. 可以通过模板传递参数来动态渲染HTML页面
+
+
    
